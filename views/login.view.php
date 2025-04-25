@@ -2,7 +2,7 @@
     <div>
         <img src="./../assets/img/img-login.png" alt="" class="w-full h-screen">
     </div>
-    <div id="login" class="py-[135px] px-[171px]">
+    <div id="login" class="py-[110px] px-[171px]">
         <div id="button-login" class="mb-[52px]">
             <nav class="w-[328px] bg-[#131320] p-[4px] rounded-[8px]">
                 <ul class="flex justify-center gap-[4px]">

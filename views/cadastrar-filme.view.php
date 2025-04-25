@@ -1,4 +1,4 @@
-<main class="grid grid-cols-2 gap-[48px] py-[64px] px-[148px]">
+<main class="grid grid-cols-2 gap-[48px] py-[50px] px-[148px]">
     <div class="flex flex-col justify-center items-center gap-[12px] bg-[#1A1B2D] rounded-[8px]">
         <img src="../assets/img/upload-icon.svg" alt="">
         <div>

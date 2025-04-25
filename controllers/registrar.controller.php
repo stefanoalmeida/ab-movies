@@ -1,5 +1,5 @@
 <?php
 
-$mensagem = ["Registrar"];
+$mensagem = $_REQUEST["mensagem"] ?? "";
 
-view("registrar");
+view("registrar", compact("mensagem"));

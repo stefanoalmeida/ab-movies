@@ -5,7 +5,6 @@
             <input type="text" class="py-[12px] px-[16px] border border-[#1A1B2D] text-[#7A7B9F] rounded-[8px] focus:outline-none" placeholder="Pesquisar filme">
         </form>
     </div>
-    <!--
     <section class="grid grid-cols-4 gap-[24px] mt-[33px]">
         <div class="w-[280px] h-[360px] bg-red-200 rounded-[8px] overflow-hidden">
             <img src="../assets/img/filme-1.png" alt="" class="object-cover">
@@ -20,7 +19,7 @@
             <img src="../assets/img/filme-4.png" class="object-cover" alt="">
         </div>
     </section>
-    !-->
+    <!--
     <div class="flex flex-col items-center gap-[20px] mt-[33px]">
         <img src="../assets/img/movie-filtro.svg" alt="">
         <p class="text-[#B5B6C9] text-base flex flex-col items-center">
@@ -32,4 +31,5 @@
             Limpar filtro
         </button>
     </div>
+        !-->
 </main>

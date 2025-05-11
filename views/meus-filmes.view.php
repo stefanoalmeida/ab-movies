@@ -4,7 +4,7 @@
         <form action="" method="post" class="flex items-center gap-[16px]">
             <input type="text" class="py-[12px] px-[16px] border border-[#1A1B2D] text-[#7A7B9F] rounded-[8px] focus:outline-none" placeholder="Pesquisar filme">
             <img src="../../assets/img/divider.png" alt="">
-            <a href="/cadastrar-filme" class="py-[12px] px-[20px] flex items-center gap-[8px] rounded-[8px] bg-[#892CCD] text-white hover:bg-[#A85FDD]">
+            <a href="/formulario-novo-filme" class="py-[12px] px-[20px] flex items-center gap-[8px] rounded-[8px] bg-[#892CCD] text-white hover:bg-[#A85FDD]">
                 <img src="../assets/img/adicionar.png" alt="">
                 Novo
             </a>
@@ -32,7 +32,7 @@
             Nenhum filme registrado.
             <span>Que tal começar cadastrando seu primeiro filme?</span>
         </p>
-        <a href="/cadastrar-filme" type="reset" form="pesquisar" class="flex items center gap-[8px] p-[4px] text-[#7A7B9F] text-base cursor-pointer">
+        <a href="/formulario-novo-filme" type="reset" form="pesquisar" class="flex items center gap-[8px] p-[4px] text-[#7A7B9F] text-base cursor-pointer">
             <img src="../assets/img/adicionar.svg" alt="">
             Cadastrar novo
         </a>

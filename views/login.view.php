@@ -13,9 +13,19 @@
         </div>
         <div id="form-login" class="flex flex-col items-center">
             <h1 class="text-white mb-[20px] text-3xl font-bold">Acesse sua conta</h1>
-            <form action="" method="post" class="flex flex-col gap-[16px]">
-                <input type="text" placeholder="E-mail" class="w-[328px] py-[12px] px-[16px] rounded-[8px] border border-[#1A1B2D] text-[#7A7B9F] focus: outline-none">
-                <input type="password" placeholder="Senha" class="w-[328px] py-[12px] px-[16px] rounded-[8px] border border-[#1A1B2D] text-[#7A7B9F] focus: outline-none">
+            <?php if ($validacoes = flash()->get('validacoes_login')) : ?>
+                <div>
+                    <ul class="bg-red-600 text-white p-4 rounded-[8px]">
+                        <li>Wooops, acho que deu ruim hein?! 😬</li>
+                        <?php foreach ($validacoes as $validacao) : ?>
+                            <li><?= $validacao ?></li>
+                        <?php endforeach ?>
+                    </ul>
+                </div>
+            <?php endif ?>
+            <form action="/login" method="post" class="flex flex-col gap-[16px]">
+                <input type="text" placeholder="E-mail" name="email" class="w-[328px] py-[12px] px-[16px] rounded-[8px] border border-[#1A1B2D] text-[#7A7B9F] focus: outline-none">
+                <input type="password" placeholder="Senha" name="password" class="w-[328px] py-[12px] px-[16px] rounded-[8px] border border-[#1A1B2D] text-[#7A7B9F] focus: outline-none">
 
                 <button class="py-[12px] px-[20px] bg-[#892CCD] text-white rounded-[8px] cursor-pointer hover:bg-[#A85FDD]">Entrar</button>
             </form>

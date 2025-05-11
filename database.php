@@ -34,4 +34,4 @@ class DB {
     }
 }
 
-$DB = new DB($config['database']['sqlite']);
+$DB = new DB(config('database'));

@@ -11,20 +11,20 @@ if (!auth()) {
 }
 
 $user_id = auth()->id;
-$title = $_POST['title'];
-$year = $_POST['year'];
-$category = $_POST['category'];
-$description = $_POST['description'];
+$title = $_POST['titulo'];
+$year = $_POST['ano'];
+$category = $_POST['categoria'];
+$description = $_POST['descricao'];
 $cover = $_FILES['cover'];
 
 $validacao = Validacao::validar([
-    'title' =>  ['required', 'min:8'],
-    'year' => ['required'],
-    'category' => ['required'],
-    'description' => ['required'],
+    'titulo' =>  ['required', 'min:8'],
+    'ano' => ['required'],
+    'categoria' => ['required'],
+    'descricao' => ['required'],
 ], $_POST);
 
-if ($validacao->naoPassou('registrar')) {
+if ($validacao->naoPassou('filme')) {
     header('Location: /formulario-novo-filme');
     exit();
 }

@@ -54,7 +54,7 @@
                 </div>
                 <div class="flex items-center gap-[12px]">
                     <span class="text-[#B5B6C9] text-[14px]">Olá, <?= auth()->name ?></span>
-                    <img src="../../assets/img/avatar.png" alt="">
+                    <img src="../../assets/img/minha-img.jpg" alt="" class="w-[40px] h-[40px] rounded-full border-2 border-[#A85FDD] overflow-hidden object-cover">
                     <img src="../../assets/img/divider.png" alt="">
                     <a href="/logout" title="Sair" class="w-[32px] h-[32px] flex items-center justify-center border border-[#1A1B2D] rounded-[8px] hover:bg-[#1A1B2D]">
                         <img src="../../assets/img/logout-icon.svg" alt="">
